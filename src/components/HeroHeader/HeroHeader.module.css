@@ -1,0 +1,17 @@
+.heroHeader {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.heroHeader h1 {
+    margin: 0;
+    font-weight: 500;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.2;
+    font-size: 6em;
+    color: #ffffff;
+    transition: color 0.3s;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

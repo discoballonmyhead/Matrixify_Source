@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, rgba(102, 245, 214, 0.7), rgba(184, 43, 255, 0.7));
+  background-size: 400% 400%;
+  animation: backgroundFlow 10s infinite linear;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+@keyframes backgroundFlow {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 0% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+.appContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 60px; /* Space for footer */
+}
+
+@media (max-width: 768px) {
+  .heroHeader h1 {
+      font-size: 2em;
+  }
+
+  .heroHeader p {
+      font-size: 1em;
+  }
+
+  .qualityOptions {
+      flex-direction: column;
+      gap: 5px;
+  }
+}

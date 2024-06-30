@@ -1,0 +1,54 @@
+.tooltipContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.infoIcon {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 0.3s ease, color 0.3s ease;
+}
+
+.infoIconSvg {
+    fill: currentColor;
+    transition: filter 0.3s ease, color 0.3s ease;
+}
+
+.infoIcon:hover .infoIconSvg {
+    filter: drop-shadow(0 0 5px #000);
+}
+
+.infoIcon.active .infoIconSvg {
+    filter: brightness(0.8);
+}
+
+.tooltipMessage {
+    visibility: visible;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: left;
+    border-radius: 5px;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    left: -150px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tooltipMessage h3 {
+    margin-top: 0;
+}
+
+.tooltipMessage img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
